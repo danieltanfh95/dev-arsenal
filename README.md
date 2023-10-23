@@ -2,6 +2,7 @@ Dev Arsenal
 ============
 
 Dev swiss army knife CLI, instead of waiting for [Dev Toys](https://github.com/veler/DevToys) to be ported to macos
+
 Dependency on macos because of `pbcopy`.
 
 Installation
@@ -21,17 +22,18 @@ Generate a random uuid4.
 
 Generate a random password with special characters. Length is optional, defaults to 12.
 
-`ars b64d`
+`ars b64d [txt]`
 
 Decode from base 64.
 
-`ars b64e`
+`ars b64e [txt]`
 
 Encode to base 64.
 
+`ars hex2rgb [code]`
 
-"pw" (run-fn fixed-length-password rest-args)
-"b64d" (run-fn b64-decode rest-args)
-"b64e" (run-fn b64-encode rest-args)
-"hex2rgb" (run-fn hex->rgb rest-args)
-"rgb2hex" (apply rgb->hex rest-args)
+convert hex color code to rgb
+
+`ars rgb2hex [red] [green] [blue]`
+
+convert rgb color code to hex
